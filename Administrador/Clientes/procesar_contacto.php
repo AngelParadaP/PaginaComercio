@@ -28,13 +28,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';  // Servidor SMTP de Gmail
     $mail->SMTPAuth = true;
-    $mail->Username = 'angel.parada9110@alumnos.udg.mx';  
-    $mail->Password = 'eyho zqme owbu kfkc';  
+    $mail->Username = '';  //tu correo de gmail
+    $mail->Password = '';  //tu contraseña de gmail, recomendado usar la contraseña para aplicaciones
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 
     $mail->setFrom($correo, $nombre); 
-    $mail->addAddress('angel.parada@alumnos.udg.mx');  
+    $mail->addAddress('');  // tu correo de gmail
 
     // Contenido del correo
     $mail->Subject = $asunto;
